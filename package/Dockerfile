@@ -39,7 +39,7 @@ VOLUME /var/log/auditlog
 
 RUN mkdir -p /usr/share/rancher/ui && \
     cd /usr/share/rancher/ui && \
-    curl -sL https://releases.rancher.com/ui/${CATTLE_UI_VERSION}.tar.gz | tar xvzf - --strip-components=1 && \
+    curl -sL https://qingyang-poi.oss-cn-shenzhen.aliyuncs.com/zoomlion/tar/2.2.0-zoomlion-v0.0.1.tar.gz | tar xvzf - --strip-components=1 && \
     cd /var/lib/rancher
 
 ENV CATTLE_CLI_URL_DARWIN  https://releases.rancher.com/cli2/${CATTLE_CLI_VERSION}/rancher-darwin-amd64-${CATTLE_CLI_VERSION}.tar.gz
