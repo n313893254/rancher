@@ -39,7 +39,7 @@ VOLUME /var/log/auditlog
 
 RUN mkdir -p /usr/share/rancher/ui && \
     cd /usr/share/rancher/ui && \
-    curl -sL https://qingyang-poi.oss-cn-shenzhen.aliyuncs.com/DCITS/2.2.1-DCITS.tar.gzz | tar xvzf - --strip-components=1 && \
+    curl -sL https://qingyang-poi.oss-cn-shenzhen.aliyuncs.com/DCITS/2.2.1-DCITS.tar.gz | tar xvzf - --strip-components=1 && \
     cd /var/lib/rancher
 
 ENV CATTLE_CLI_URL_DARWIN  https://releases.rancher.com/cli2/${CATTLE_CLI_VERSION}/rancher-darwin-amd64-${CATTLE_CLI_VERSION}.tar.gz
